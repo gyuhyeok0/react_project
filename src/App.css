@@ -1,0 +1,64 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 기본 스타일 */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html {
+  background-color: rgb(63, 63, 63);
+}
+
+body {
+  max-width: 1280px; /* 태블릿 최대 너비 */
+  height: 100%; /* 전체 높이를 차지하도록 설정 */
+  margin: 0 auto; /* 중앙 정렬 */
+  overflow-x: hidden; /* 수평 스크롤바 숨기기 */
+  display: flex;
+  flex-direction: column;
+}
+
+/* 공통 레이아웃 스타일 */
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: bisque;
+}
+
+
+/* 폰트사이즈 및 배경색 조절 */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  body {
+    font-size: 18px;
+  }
+}
