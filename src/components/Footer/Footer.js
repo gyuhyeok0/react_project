@@ -1,9 +1,11 @@
 
 function Footer(){
 
+    console.log('푸터입니다.')
+
     return(
         <>
-            <p>123</p>
+            <div style={{width: '100vw', height: '50px', backgroundColor: 'blue'}}></div>
         </>
     );
 }
