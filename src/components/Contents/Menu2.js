@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import './Menu2.css';
-import AiPhysicalAbility from './Menu2Content/AiPhysicalAbility';
+import AiPhysicalAbility from './Menu2Content/category1/AiPhysicalAbility';
+import AiNutrients from './Menu2Content/category2/AiNutrients';
+import CategoryPage1 from './Menu2Content/category1/CategoryPage1';
+import CategoryPage2 from './Menu2Content/category2/CategoryPage2';
 
 function Menu2() {
     console.log('Menu2 영역입니다.');
@@ -28,7 +31,8 @@ function Menu2() {
             <div className="menu2_layout">
                 <div className='ai_layout' style={{ display: 'flex', justifyContent: 'center' }}>
                     <div className='flex_wrap'>
-                        <AiPhysicalAbility />
+                        {categoryPage === 'category1' && <AiPhysicalAbility />}
+                        {categoryPage === 'category2' && <AiNutrients/>}
                         <div style={{ fontSize: '20px', fontWeight: 'normal' }}>
                             <p style={{ margin: '10px 0 3px 0' }}>Category</p>
                         </div>
@@ -45,25 +49,6 @@ function Menu2() {
     );
 }
 
-// 카테고리 페이지 1 컴포넌트
-function CategoryPage1() {
-    console.log('categoryPage 1')
-    return (
-    
-        <div style={{width:'100%', height: '500px', backgroundColor:"skyblue"}}>
-            <p>여기에 카테고리 1의 내용이 표시됩니다.</p>
-        </div>
-    );
-}
 
-// 카테고리 페이지 2 컴포넌트
-function CategoryPage2() {
-    console.log('categoryPage2')
-    return (
-        <div style={{width:'100%', height: '500px', backgroundColor:"pink"}}>
-            <p>여기에 카테고리 2의 내용이 표시됩니다.</p>
-        </div>
-    );
-}
 
 export default Menu2;
