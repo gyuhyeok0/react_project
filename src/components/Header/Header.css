@@ -1,0 +1,35 @@
+.header_layout{
+    margin: 15px 15px 0 15px;
+}
+
+.logo_layout{
+    display: flex;
+}
+
+.logo_text{
+    color: rgb(54, 189, 238);
+}
+
+.menu_layout{
+    margin: 10px 0 10px 0;
+}
+
+.menu_layout {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .menu, .icon {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .icon {
+    margin-left: auto;
+    color: black;
+  }
+
+.menu{
+    font-size: 15px;
+    font-weight: bold;
+}
