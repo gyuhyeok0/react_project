@@ -1,5 +1,23 @@
-.menu2_layout{
-    width: 100vw;
-    height: auto;
-    
+/* Menu1.css */
+.menu2_layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .ai_layout {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .flex_wrap {
+    width: 90%;
+  }
+
+@media(min-width: 765px) {
+  .flex_wrap {
+      width: 80%;
+  }
 }

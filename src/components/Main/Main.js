@@ -1,3 +1,7 @@
+/* 이 메인 페이지는 헤더와 푸터를 표시하며, 메뉴 버튼을 통해 해당 메뉴를 표시합니다.
+  작성일자 : 6월 28일
+*/
+
 import React, { useState, useMemo } from 'react';
 import Header from '../Header/Header';
 import Menu1 from '../Contents/Menu1';

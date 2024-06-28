@@ -1,3 +1,7 @@
+/*
+    Footer 입니다.
+    작성일자 6월 28일
+*/
 
 function Footer(){
 
@@ -5,7 +9,9 @@ function Footer(){
 
     return(
         <>
-            <div style={{width: '100vw', height: '50px', backgroundColor: 'blue'}}></div>
+            <div style={{width: '100vw', height: '50px', backgroundColor: 'blue', color:'white'}}>
+                <h1>Footer</h1>
+            </div>
         </>
     );
 }
