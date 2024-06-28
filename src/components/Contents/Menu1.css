@@ -1,0 +1,18 @@
+/* Menu1.css */
+.menu1_layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .ai_layout {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .flex_wrap {
+    width: 90%;
+  }
+  
