@@ -2,6 +2,9 @@ import React from 'react';
 import './AiPhysicalAbility.css';
 
 function AiPhysicalAbility() {
+    
+    console.log('ai영역입니다.');
+
     return (
         <div className='aiPhysicalAbility_layout'>
             <div className='header'>
