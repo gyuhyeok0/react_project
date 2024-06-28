@@ -1,12 +1,12 @@
 import React from 'react';
-import './AiRecommend.css';
+import './AiPhysicalAbility.css';
 
-function AiRecommend() {
+function AiPhysicalAbility() {
     return (
-        <div className='aiRecommend_layout'>
+        <div className='aiPhysicalAbility_layout'>
             <div className='header'>
-                <span className='title'>AI 분석</span>
-                <span className='score'>● 83점</span>
+                <span className='title'>AI 수행능력</span>
+                <span className='score'>● 80점</span>
             </div>
             <div className='progressBar'></div>
             <div className='description'>
@@ -24,4 +24,4 @@ function AiRecommend() {
     );
 }
 
-export default AiRecommend;
+export default AiPhysicalAbility;

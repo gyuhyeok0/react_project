@@ -15,4 +15,9 @@
   .flex_wrap {
     width: 90%;
   }
-  
+
+@media(min-width: 765px) {
+  .flex_wrap {
+      width: 80%;
+  }
+}

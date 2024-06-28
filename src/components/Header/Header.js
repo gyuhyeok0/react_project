@@ -1,3 +1,8 @@
+/*
+    해더 입니다.
+    작성일자 : 6월 28일
+*/
+
 import React from 'react';
 import './Header.css';
 
@@ -10,14 +15,14 @@ function Header(props) {
         menu2: { color: 'gray', borderBottom: 'none', paddingBottom: '10px' }
     });
 
-    // 메뉴 버튼 클릭 시 content 변경 및 스타일 변경
+    // 메뉴 버튼 클릭 시 menu 변경 및 스타일 변경
     const handleMenuClick = (menu) => {
         setMenuStyle({
             menu1: menu === 'menu1' ? { color: 'black', borderBottom: '3px solid skyblue', paddingBottom: '10px' } : { color: 'gray', borderBottom: 'none', paddingBottom: '10px' },
             menu2: menu === 'menu2' ? { color: 'black', borderBottom: '3px solid skyblue', paddingBottom: '10px' } : { color: 'gray', borderBottom: 'none', paddingBottom: '10px' }
         });
 
-        // content 변경
+        // prop menu 
         props.onChangeMenu(menu);
     };
 
