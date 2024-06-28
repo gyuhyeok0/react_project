@@ -8,8 +8,11 @@ function App() {
   return (
     <Router>
       <Routes>
+        {/* 로그인 페이지 */}
         <Route path="/" element={<Login />} />
-        <Route path="/main" element={<Main />} />
+
+        {/* 유저페이지 */}
+        <Route path="/user/*" element={<Main />} />
       </Routes>
     </Router>
   );

@@ -13,7 +13,7 @@ function Login() {
   const navigate = useNavigate(); 
 
   const handleKakaoLogin = () => {
-    navigate('/main');
+    navigate('/user/home');
   };
 
   console.log('로그인 페이지')
