@@ -1,5 +1,12 @@
 .header_layout{
-    margin: 15px 15px 0 15px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.flex_wrap{
+  width: 90%;
 }
 
 .logo_layout{
@@ -11,7 +18,7 @@
 }
 
 .menu_layout{
-    margin: 10px 0 10px 0;
+    padding: 10px 0 0px 0;
 }
 
 .menu_layout {
