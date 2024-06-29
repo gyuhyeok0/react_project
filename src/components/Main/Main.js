@@ -8,7 +8,6 @@ import './Main.css';
 
 function Main() {
   console.log('메인 핸들러 입니다.');
-  console.log('안녕')
 
   const navigate = useNavigate();
 
@@ -21,12 +20,18 @@ function Main() {
 
   return (
     <div className="layout">
-      {memoizedHeader}
-      <Routes>
-        <Route path="/home" element={<Menu1 />} />
-        <Route path="/today/*" element={<Menu2 />} />
-      </Routes>
-      {memoizedFooter}
+      <div className="header">
+        {memoizedHeader}
+      </div>
+      <div className="content">
+        <Routes>
+          <Route path="/home" element={<Menu1 />} />
+          <Route path="/today/*" element={<Menu2 />} />
+        </Routes>
+      </div>
+      <div className="footer">
+        {memoizedFooter}
+      </div>
     </div>
   );
 }

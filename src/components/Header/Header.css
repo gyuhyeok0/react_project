@@ -2,11 +2,11 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 15px;
+    background-color: white;
 }
 
 .flex_wrap{
-  width: 100%;
+  width: 90%;
 }
 
 .logo_layout{
@@ -39,10 +39,4 @@
 .menu{
     font-size: 15px;
     font-weight: bold;
-}
-/* 반응형 디자인: 태블릿 화면에서 flex_wrap의 너비를 75%로 설정 */
-@media (min-width: 768px) {
-  .flex_wrap {
-      width: 80%;
-  }
 }

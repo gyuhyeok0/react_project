@@ -2,13 +2,13 @@ import React from 'react';
 import './AiPhysicalAbility.css';
 
 function AiPhysicalAbility() {
-    
+
     console.log('ai영역입니다.');
 
     return (
         <div className='aiPhysicalAbility_layout'>
             <div className='header'>
-                <span className='title'>AI 수행능력</span>
+                <span className='title'>분석2</span>
                 <span className='score'>● 80점</span>
             </div>
             <div className='progressBar'></div>

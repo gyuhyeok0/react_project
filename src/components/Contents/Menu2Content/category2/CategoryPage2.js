@@ -1,3 +1,5 @@
+
+
 function CategoryPage2() {
     console.log('categoryPage2')
     return (

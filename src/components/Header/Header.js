@@ -29,8 +29,8 @@ function Header(props) {
     <div className="header_layout">
       <div className='flex_wrap'>
         <div className="logo_layout">
-          <img src='/logo192.png' alt='Logo' className='logo-image' style={{ width: '25px' }} />
-          <span className='logo_text' style={{ fontSize: '21px', marginLeft: '5px' }}>ReactLogo</span>
+          <img src='/logo192.png' alt='Logo' className='logo-image' />
+          <span className='logo_text' style={{ marginLeft: '6px' }}>ReactLogo</span>
         </div>
         <div className="menu_layout">
           <div className='menu'>
@@ -39,20 +39,20 @@ function Header(props) {
               style={menuStyle.menu1} 
               onClick={() => handleMenuClick('home')}
             >
-              <p>Home</p>
+              <button className='buttonMenu'>Home</button>
             </div>
             <div 
               className='menu_button' 
               style={menuStyle.menu2} 
               onClick={() => handleMenuClick('today')}
             >
-              <p>Today</p>
+              <button className='buttonMenu'>Today</button>
             </div>
           </div>
           <div className='icon'>
-            <div className='icon_button'>
-              <p>검색</p>
-            </div>
+            <p className='icon_button'>
+                검색
+            </p>
           </div>
         </div>
       </div>

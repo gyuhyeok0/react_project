@@ -6,7 +6,7 @@ function AiNutrients() {
     return (
         <div className='aiNutrients_layout'>
             <div className='header'>
-                <span className='title'>AI 영양 평가</span>
+                <span className='title'>분석3</span>
                 <span className='score'>● 72점</span>
             </div>
             <div className='progressBar'></div>
