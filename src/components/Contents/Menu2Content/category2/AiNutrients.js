@@ -2,6 +2,7 @@ import React from 'react';
 import './AiNutrients.css';
 
 function AiNutrients() {
+    console.log('ai영역입니다.');
     return (
         <div className='aiNutrients_layout'>
             <div className='header'>
