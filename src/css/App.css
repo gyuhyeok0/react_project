@@ -37,28 +37,200 @@ body {
   flex-grow: 1; /* 컨텐츠 양에 따라 높이가 늘어나도록 설정 */
 }
 
+/* 버튼 텍스트 크기 및 배경색 조절 */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
 
-/* 폰트사이즈 및 배경색 조절 */
-@media screen and (max-width: 600px) {
+/* 작은 화면 (최대 600px) ex 아이폰 미니 */ 
+@media screen and (max-width: 480px) {
+
+  body {
+    font-size: 13px;
+  }
+
+  .buttonMenu {
+    font-size: 16px;
+  }
+
+  .logo-image{
+    width: 23px;
+  }  
+
+  .logo_text{
+    font-size: 18px;
+  }
+
+  .header_layout{
+    padding-top: 15px;
+  }
+
+  .categoryText{
+    font-size: 17px;
+    font-weight: 300;
+    margin: 8px 0 2px 0;
+  }
+  /* 카테고리 버튼 */
+  .buttonCategory {
+    font-size: 15px;
+    margin-bottom: 2px;
+  }
+}
+
+/* 작은 화면 (최대 600px) ex) 아이폰 6, 7, 8 */
+@media screen and (min-width: 481px) and (max-width: 600px) {
   body {
     font-size: 15px;
   }
-}
 
-@media screen and (min-width: 601px) and (max-width: 767px) {
-  body {
+  .buttonMenu {
+    font-size: 18px;
+  }
+  
+  .logo-image{
+    width: 25px;
+  }  
+
+  .logo_text{
+    font-size: 24px;
+  }
+
+  .header_layout{
+    padding-top: 18px;
+  }
+
+  .categoryText{
+    font-size: 18px;
+    font-weight: 300;
+    margin: 13px 0 3px 0;
+  }
+  /* 카테고리 버튼 */
+  .buttonCategory {
     font-size: 16px;
+    margin-bottom: 3px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+/* 중간 화면 (601px - 767px) ex) 아이폰 XR, 11 */
+@media screen and (min-width: 601px) and (max-width: 767px) {
   body {
     font-size: 17px;
   }
+
+  .buttonMenu {
+    font-size: 19px;
+  }
+
+  .logo-image{
+    width: 26px;
+  }
+
+  .logo_text{
+    font-size: 28px;
+  }
+
+  .header_layout{
+    padding-top: 21px;
+  }
+
+  .categoryText{
+    font-size: 20px;
+    font-weight: 300;
+    margin: 15px 0 3px 0;
+  }
+  /* 카테고리 버튼 */
+  .buttonCategory {
+    font-size: 18px;
+    margin-bottom: 3px;
+  }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
+/* 태블릿 (768px - 1024px) ex) 아이패드 미니 */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   body {
-    font-size: 18px;
+    font-size: 19px;
+  }
+
+  .buttonMenu {
+    font-size: 21px;
+  }
+
+  .flex_wrap {
+    width: 80%;
+  }
+
+  .logo-image{
+    width: 28px;
+  }
+
+  .logo_text{
+    font-size: 28px;
+  }
+
+  .header_layout{
+    padding-top: 35px;
+  }
+
+    /* 카테고리 관련 */
+    .categoryText{
+      font-size: 23px;
+      font-weight: 300;
+      margin: 18px 0 3px 0;
+    }
+    /* 카테고리 버튼 */
+    .buttonCategory {
+      font-size: 20px;
+      margin-bottom: 3px;
+    }
+  
+}
+
+/* 큰 화면 (1025px 이상) ex) 아이패드 프로 12.9*/
+@media screen and (min-width: 1025px) {
+  /* 기본 텍스트 */
+  body {
+    font-size: 23px;
+  }
+
+  /* 메뉴버튼 */
+  .buttonMenu {
+    font-size: 27px;
+  }
+
+  /* 테블릿 여백관련 */
+  .flex_wrap {
+    width: 80%;
+  }
+
+  /* 로고 관련 */
+  .logo-image{
+    width: 35px;
+  }
+  .logo_text{
+    font-size: 35px;
+  }
+
+  /* 해더 */
+  .header_layout{
+    padding-top: 40px;
+  }
+
+  /* 카테고리 관련 */
+  .categoryText{
+    font-size: 25px;
+    font-weight: 300;
+    margin: 20px 0 3px 0;
+  }
+  /* 카테고리 버튼 */
+  .buttonCategory {
+    font-size: 22px;
+    margin-bottom: 3px;
   }
 }

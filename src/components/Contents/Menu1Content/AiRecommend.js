@@ -5,7 +5,7 @@ function AiRecommend() {
     return (
         <div className='aiRecommend_layout'>
             <div className='header'>
-                <span className='title'>AI 분석</span>
+                <span className='title'>분석1</span>
                 <span className='score'>● 83점</span>
             </div>
             <div className='progressBar'></div>

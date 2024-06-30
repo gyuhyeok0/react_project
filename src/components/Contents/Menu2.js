@@ -48,11 +48,11 @@ function Menu2() {
                         {location.pathname.includes('category1') && <AiPhysicalAbility />}
                         {location.pathname.includes('category2') && <AiNutrients />}
                         <div style={{ fontSize: '20px', fontWeight: 'normal' }}>
-                            <p style={{ margin: '10px 0 3px 0' }}>Category</p>
+                            <div className= "categoryText">Category</div>
                         </div>
                         <div style={{ display: 'flex', gap: '15px', color: 'gray', fontWeight: 'bold', marginBottom: '3px' }}>
-                            <p style={category.category1} onClick={() => handleCategoryClick('category1')}>one</p>
-                            <p style={category.category2} onClick={() => handleCategoryClick('category2')}>two</p>
+                            <button className="buttonCategory" style={category.category1} onClick={() => handleCategoryClick('category1')}>one</button>
+                            <button className="buttonCategory" style={category.category2} onClick={() => handleCategoryClick('category2')}>two</button>
                         </div>
                         <Routes>
                             <Route path="category1" element={<CategoryPage1 />} />

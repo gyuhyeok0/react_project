@@ -1,5 +1,6 @@
-/* Menu1.css */
-.menu2_layout {
+/* Menu2.css */
+
+  .menu2_layout {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,8 +17,3 @@
     width: 90%;
   }
 
-@media(min-width: 765px) {
-  .flex_wrap {
-      width: 80%;
-  }
-}
