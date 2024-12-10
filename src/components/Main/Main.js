@@ -7,7 +7,8 @@ import Footer from '../Footer/Footer';
 import './Main.css';
 
 function Main() {
-  console.log('메인 핸들러 입니다.');
+  console.log('메인 핸들러 입니다');
+  console.log('실험');
 
   const navigate = useNavigate();
 
